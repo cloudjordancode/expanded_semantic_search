@@ -1,0 +1,9 @@
+.venv/
+venv/
+.env
+__pycache__/
+*.pyc
+chroma_db/
+chroma_demo/
+.streamlit/secrets.toml
+.DS_Store

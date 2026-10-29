@@ -1,0 +1,7 @@
+Streamlit is a Python framework for creating interactive web applications without writing a separate JavaScript frontend. Developers use commands such as st.title(), st.write(), st.dataframe(), and st.metric() to display content. Applications can be launched with the streamlit run command.
+
+Streamlit widgets include st.text_input(), st.button(), st.slider(), st.selectbox(), and st.multiselect(). When a user interacts with a widget, Streamlit reruns the script from top to bottom. This rerun behavior makes it important to manage persistent values and expensive resources carefully.
+
+The st.session_state object preserves values between reruns for a user session. The @st.cache_resource decorator caches resources such as database connections and machine learning models. The st.sidebar area can hold filters and navigation controls, while st.columns() arranges content side by side.
+
+A data dashboard can display charts, tables, and summary metrics based on uploaded or retrieved information. A semantic search interface can combine a query input, source filters, result counts, document previews, and st.expander() panels to reveal full matching text.

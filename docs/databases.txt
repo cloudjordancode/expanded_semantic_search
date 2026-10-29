@@ -1,0 +1,7 @@
+Relational databases organize information into tables containing rows and columns. SQL is used to create tables, insert records, retrieve information, update values, and delete records. Primary keys uniquely identify rows, while foreign keys connect related tables.
+
+SQLite is a lightweight relational database that stores data in a local file. Queries such as SELECT, WHERE, ORDER BY, and JOIN help applications retrieve specific records. Parameterized queries protect against SQL injection by separating input values from SQL instructions.
+
+SQLAlchemy is a Python toolkit and object-relational mapper, or ORM. It allows developers to represent database tables as Python classes and interact with rows as objects. A Session manages database operations, while commit() saves changes and rollback() can undo a failed transaction.
+
+In a library management system, Books, Members, and Borrowings can be modeled as related tables. A borrowing record connects a member to a book through foreign keys. Relationships and constraints help maintain data integrity when records are created, modified, or removed.

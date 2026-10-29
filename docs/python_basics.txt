@@ -1,0 +1,7 @@
+Python is a general-purpose programming language used for automation, backend development, data analysis, and artificial intelligence. Variables store values, while strings, integers, floats, booleans, lists, and dictionaries represent different types of data. Python uses indentation to define blocks of code.
+
+A for loop repeats an operation over items in a sequence. The range() function generates integer positions, and enumerate() provides both an index and a value. List comprehensions offer a compact way to transform or filter collections. Conditional statements such as if, elif, and else control which code runs.
+
+Functions group reusable instructions and can accept parameters and return results. A function such as def calculate_total(prices): can loop through a list and return a sum. Separating code into functions makes applications easier to test, debug, and maintain.
+
+Python slicing extracts part of a string or list using syntax such as text[start:end]. A sliding-window chunking algorithm uses slices to divide long documents into overlapping sections. For example, a chunk size of 500 and overlap of 100 produces a step size of 400 characters.

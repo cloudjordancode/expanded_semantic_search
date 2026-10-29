@@ -1,0 +1,9 @@
+An embedding is a numerical vector that represents the meaning of text. A sentence-transformer model such as all-MiniLM-L6-v2 converts sentences or document chunks into vectors. Text with similar meanings can have nearby representations even when the wording is different.
+
+Cosine similarity measures the directional alignment between vectors. Higher cosine similarity generally indicates more related meanings. Cosine distance is a different quantity: when ChromaDB uses cosine distance, smaller distances indicate closer matches. Similarity thresholds affect the balance between relevant results and unrelated results.
+
+Chunking divides long documents into smaller searchable sections. Fixed-size chunking uses character or token limits, while paragraph chunking follows natural text boundaries. Overlap preserves context between adjacent chunks, but excessive overlap increases storage and can produce repetitive results.
+
+ChromaDB stores documents, embeddings, IDs, and metadata in collections. A PersistentClient keeps the database on disk. The upsert() method inserts or updates records, and query() retrieves nearby vectors. Metadata such as a source filename enables filtering with the where parameter.
+
+A semantic search pipeline first loads documents, creates chunks, generates embeddings, and stores them in a vector database. At query time, the application embeds the user's question using the same model and retrieves relevant chunks. Retrieval-augmented generation, or RAG, extends this process by supplying retrieved context to a language model when generating an answer.

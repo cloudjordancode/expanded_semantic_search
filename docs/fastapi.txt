@@ -1,0 +1,7 @@
+FastAPI is a Python web framework for building REST APIs. Developers define endpoints using decorators such as @app.get(), @app.post(), @app.patch(), and @app.delete(). Each endpoint accepts an HTTP request and returns a response, often encoded as JSON.
+
+Pydantic models validate incoming request data and define expected response structures. If a client submits invalid data, FastAPI can return a 422 validation error. Type hints also help generate interactive API documentation at /docs using Swagger UI.
+
+Authentication verifies a user's identity, while authorization determines which resources that user can access. JSON Web Tokens, or JWTs, can carry signed claims that an API validates on protected routes. A task manager API can use an owner_id field to ensure users only access their own tasks.
+
+FastAPI can work with SQLAlchemy and SQLite to persist application data. Dependency injection can provide database sessions or the currently authenticated user. Automated tests with pytest and TestClient check status codes, request validation, filtering, pagination, and access controls.
